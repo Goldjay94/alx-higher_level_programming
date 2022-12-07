@@ -1,9 +1,13 @@
 #!/usr/bin/python3
+
+
 def complex_delete(a_dictionary, value):
-    keys_to_del = []
-    for key in a_dictionary:
+    """
+    A function that computes the square value of
+    all integers of a matrix using map
+    """
+    a_list = list(a_dictionary.keys())
+    for key in a_list:
         if a_dictionary[key] == value:
-            keys_to_del.append(key)
-    for key in keys_to_del:
-        del a_dictionary[key]
+            del a_dictionary[key]
     return a_dictionary

@@ -23,8 +23,8 @@
  ## General
 - <p>Why Python programming is awesome</p>
 - <p>How to connect to a MySQL database from a Python script</p>
-- <p>How to SELECT rows in a MySQL table from a Python script</p>
-- <p>How to INSERT rows in a MySQL table from a Python script</p>
+- <p>How to <code>SELECT</code> rows in a MySQL table from a Python script</p>
+- <p>How to <code>INSERT</code> rows in a MySQL table from a Python script</p>
 - <p>What ORM means</p>
 - <p>How to map a Python Class to a MySQL table</p>
 ---

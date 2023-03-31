@@ -1,19 +1,15 @@
 #!/usr/bin/python3
-""" Fetches https://intranet.hbtn.io/status"""
+"""
+A Python script that takes your GitHub credentials
+(username and password) and uses the GitHub API to display your id
+"""
 import requests
-from requests.auth import HTTPBasicAuth
 from sys import argv
 
-
-if __name__ == '__main__':
-    url = 'https://api.github.com/user'
-    username, token = argv[1:]
-
-    s = requests.Session()
-
-    data = {'username': username, 'token': token}
-    response = s.get(url, auth=(username, token)).json()
+if __name__ == "__main__":
+    url = "https://api.github.com/user"
+    res = requests.get(url, auth=(argv[1], argv[2]))
     try:
-        print(response['id'])
-    except:
-        print('None')
+        print(res.json().get("id"))
+    except Exception:
+        print("None")
